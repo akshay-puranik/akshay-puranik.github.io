@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './Components/About';
+import Nabvar from './Components/Nabvar';
+import TechStack from './Components/TechStack';
 
 function App() {
 
@@ -10,16 +12,11 @@ function App() {
 
 
   return (
-    <div onKeyDown={e => handleInput(e)} className="App">
-      <div>
-        up
-      </div>
-      <div>
-        <div>Left</div>
-        <div>Down</div>
-        <div>Right</div>
-      </div>
-    </div>
+    <>
+      <Nabvar />
+      <About />
+      <TechStack/>
+    </>
   );
 }
 
