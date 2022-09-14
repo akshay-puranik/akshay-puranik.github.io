@@ -1,18 +1,24 @@
-import { Avatar, Center, HStack, Image, Text, VStack } from '@chakra-ui/react';
+import { Avatar, Center, Flex, HStack, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import profileImg from "../Assets/profile_img.jpeg"
 
 const About = () => {
   return (
     <>
-      <HStack p={"30px"} spacing={"30px"} >
+      <Flex flexDirection={{ base: "column", md: "row" }}
+        alignItems="center"
+        gap="5%"
+        height={"90vh"}
+        bg="black"
+        color="white"
+        id="about" p={"30px"} spacing={"30px"} >
         <Center>
           <Avatar w={"400px"} h={"400px"} src={profileImg} />
         </Center>
         <Center>
-          <Text fontSize={"3xl"} fontFamily={"sans-serif"} >Hi I am Akshay Puranik. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis quis illum facere accusamus expedita, tempora provident nesciunt. Enim et laborum quo saepe officiis sint quibusdam porro nisi. Esse, cupiditate! </Text>
+          <Text fontSize={"3xl"} fontFamily={"sans-serif"} >Hi I am Akshay Puranik. <br/> I am a Full Stack Web Developer </Text>
         </Center>
-      </HStack>
+      </Flex>
       <Center>
         <VStack w={"70%"} p={"20px"} >
           <Text fontWeight={"bold"} fontSize={"4xl"}>About Me</Text>
