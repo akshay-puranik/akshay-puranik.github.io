@@ -1,4 +1,4 @@
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, HStack, Menu, MenuButton, MenuItem, MenuList, Spacer, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, HStack, Image, Menu, MenuButton, MenuItem, MenuList, Spacer, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 
 const Nabvar = () => {
@@ -11,7 +11,7 @@ const Nabvar = () => {
   return (
     <div>
       <HStack bg={"black"} p={"20px"} justifyContent={"space-between"}>
-        <Button _hover={{ color: "black", bg: "white" }} color={"white"} variant={"ghost"} colorScheme={"gray"}>LOGO</Button>
+        <Image h={"50px"} src={"https://www.automotiveproductsinc.com/assets/logo/ap-logo-white-notext.png"} />
         <HStack display={{ base: "none", md: "flex" }} >
           {
             buttons.map((el) => {
