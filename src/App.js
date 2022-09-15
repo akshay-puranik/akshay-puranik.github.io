@@ -1,6 +1,7 @@
 import './App.css';
 import About from './Components/About';
 import Nabvar from './Components/Nabvar';
+import Projects from './Components/Projects';
 import TechStack from './Components/TechStack';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
     <>
       <Nabvar />
       <About />
-      <TechStack/>
+      <TechStack />
+      <Projects/>
     </>
   );
 }

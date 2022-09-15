@@ -1,5 +1,4 @@
-import { Box, Center, Image, Text } from '@chakra-ui/react';
-import { Carousel } from 'react-responsive-carousel';
+import { AbsoluteCenter, Box, Center, Flex, Image, Text, VStack } from '@chakra-ui/react';
 import expressJs from "../Assets/Tech_Stack/express.svg"
 import bootStrap from "../Assets/Tech_Stack/bootstrap.svg"
 import css from "../Assets/Tech_Stack/css-3.svg"
@@ -12,9 +11,11 @@ import nodeJs from "../Assets/Tech_Stack/nodejs-icon.svg"
 import npm from "../Assets/Tech_Stack/npm.svg"
 import reactLogo from "../Assets/Tech_Stack/react.svg"
 import reduxLogo from "../Assets/Tech_Stack/redux.svg"
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import Slider from 'infinite-react-carousel';
+
+import onResize from "infinite-react-carousel";
+
 
 const TechStack = () => {
   const techStack = [
@@ -65,13 +66,14 @@ const TechStack = () => {
 
   ]
 
+
   return (
-    <>
-      <Center>
-        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"3xl"}>My Tools & Skills</Text>
+    <Box p={"5% 10%"} >
+      <Center p={"30px"} >
+        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"3xl"}>Tools & Skills</Text>
       </Center>
-      <Box maxW={"80%"} m={"auto"}>
-        <Slider autoplaySpeed={"1500"} gap={"30px"} arrows={false} pauseOnHover={false} slidesToShow={"5"} wheel={true} autoplay={true} adaptiveHeight={true} >
+      <Box>
+        <Slider autoplaySpeed={"1500"} gap={"30px"} arrows={false} pauseOnHover={false} slidesToShow={"4"} wheel={true} autoplay={true} adaptiveHeight={true} >
           {
             techStack.map((el) => {
               return <Box>
@@ -83,8 +85,32 @@ const TechStack = () => {
           }
         </Slider>
       </Box>
-      <p>Yo</p>
-    </>
+      <Box p={"30px"} border={"1px solid black"} >
+        <Flex flexDirection={{ base: "column", md: "row" }}  >
+          <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
+            <Center>
+              <Text>
+                Front End
+              </Text>
+            </Center>
+          </Box>
+          <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
+            <Center>
+              <Text>
+                Back End
+              </Text>
+            </Center>
+          </Box>
+          <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
+            <Center>
+              <Text>
+                DSA
+              </Text>
+            </Center>
+          </Box>
+        </Flex>
+      </Box>
+    </Box>
   );
 };
 
