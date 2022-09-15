@@ -68,15 +68,15 @@ const TechStack = () => {
 
 
   return (
-    <Box p={"5% 10%"} >
-      <Center p={"30px"} >
-        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"3xl"}>Tools & Skills</Text>
+    <Box p={"1% 10%"} pb={"5%"} >
+      <Center p={"30px"} pt={"0"} >
+        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"4xl"}>Tools & Skills</Text>
       </Center>
       <Box>
         <Slider autoplaySpeed={"1500"} gap={"30px"} arrows={false} pauseOnHover={false} slidesToShow={"4"} wheel={true} autoplay={true} adaptiveHeight={true} >
           {
             techStack.map((el) => {
-              return <Box>
+              return <Box key={el.name} >
                 <Center>
                   <Image p={"20px"} h={"150px"} src={el.image} />
                 </Center>
