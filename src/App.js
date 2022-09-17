@@ -3,6 +3,7 @@ import About from './Components/About';
 import ContactMe from './Components/ContactMe';
 import Nabvar from './Components/Nabvar';
 import Projects from './Components/Projects';
+import Statistics from './Components/Statistics';
 import TechStack from './Components/TechStack';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <About />
       <TechStack />
       <Projects />
+      <Statistics/>
       <ContactMe/>
     </>
   );
