@@ -16,7 +16,7 @@ const About = () => {
           </Center>
           <Spacer />
           <Center p={"30px"} >
-            <Text fontSize={"3xl"} fontFamily={"sans-serif"} >Hi I am Akshay Puranik. <br /> I am a Full Stack Web Developer </Text>
+            <Text fontSize={"3xl"} fontFamily={"sans-serif"} >Hi I am Akshay Puranik. <br /> I am a Full Stack Web Developer</Text>
           </Center>
         </Flex>
       </Center>
