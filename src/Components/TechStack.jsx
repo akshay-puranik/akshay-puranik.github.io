@@ -85,7 +85,7 @@ const TechStack = () => {
           }
         </Slider>
       </Box>
-      <Box p={"30px"} border={"1px solid black"} >
+      {/* <Box p={"30px"} border={"1px solid black"} >
         <Flex flexDirection={{ base: "column", md: "row" }}  >
           <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
             <Center>
@@ -109,7 +109,7 @@ const TechStack = () => {
             </Center>
           </Box>
         </Flex>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

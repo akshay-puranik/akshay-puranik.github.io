@@ -1,5 +1,7 @@
-import { Box, Button, Collapse, Drawer, DrawerContent, DrawerOverlay, HStack, Image, Slide, useDisclosure, VStack } from '@chakra-ui/react';
+import {  Button,  Drawer, DrawerContent, DrawerOverlay, HStack, Image, useDisclosure, VStack } from '@chakra-ui/react';
 import React from 'react';
+import DehazeIcon from '@mui/icons-material/Dehaze';
+import { NavLink } from 'react-router-dom';
 
 const Nabvar = () => {
 
@@ -15,19 +17,19 @@ const Nabvar = () => {
         <HStack display={{ base: "none", md: "flex" }} >
           {
             buttons.map((el) => {
-              return <Button _hover={{ color: "black", bg: "white" }} color={"white"} variant={"ghost"} colorScheme={"gray"} key={el}>
+              return <NavLink _hover={{ color: "black", bg: "white" }} style={{padding:"5px",color:"white"}} key={el}>
                 {el}
-              </Button>
+              </NavLink>
             })
           }
           {/* display={{ base: "block", md: "none" }} */}
         </HStack>
 
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-          Open
+        <Button ref={btnRef} display={{base:"block",md:"none"}} colorScheme='teal' onClick={onOpen}>
+          <DehazeIcon/>
         </Button>
         <Drawer
-          size={"s"}
+          size={"xs"}
           isOpen={isOpen}
           placement='right'
           onClose={onClose}
@@ -37,7 +39,11 @@ const Nabvar = () => {
           <DrawerContent bg={"black"} >
             <VStack p={"30px"} >
               {
-                buttons.map(el => <Button _hover={{ color: "black", bg: "white" }} color={"white"} variant={"ghost"} colorScheme={"gray"} key={el}> {el} </Button>)
+                buttons.map((el) => {
+                  return <NavLink _hover={{ color: "black", bg: "white" }} style={{ padding: "5px", color: "white" }} key={el}>
+                    {el}
+                  </NavLink>
+                })
               }
             </VStack>
           </DrawerContent>
