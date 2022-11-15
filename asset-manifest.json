@@ -1,16 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.30b4e909.css",
-    "main.js": "/static/js/main.4ac8c622.js",
+    "main.js": "/static/js/main.70600762.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/ideakart1.png": "/static/media/ideakart1.213cefdb5d3361e611d0.png",
     "static/media/milaap2.png": "/static/media/milaap2.f5936bafdf2f369a1911.png",
     "static/media/ideakart2.png": "/static/media/ideakart2.f4a2dafba36ef2379412.png",
     "static/media/milaap1.png": "/static/media/milaap1.9cd136b09fcd0bbbd3cc.png",
     "static/media/ideakart3.png": "/static/media/ideakart3.cca172d1271e55b6a104.png",
-    "static/media/zappos1.png": "/static/media/zappos1.9004f18e2439defc0bd0.png",
-    "static/media/zappos3.png": "/static/media/zappos3.816fec9284d51da3e01b.png",
-    "static/media/zappos2.png": "/static/media/zappos2.b8f6a12557eb252f01ac.png",
     "static/media/milaap3.png": "/static/media/milaap3.06dc14ccf6bbed19239b.png",
     "static/media/profile_img.jpeg": "/static/media/profile_img.42402b912b564c387548.jpeg",
     "static/media/Akshay-Puranik-Resume.pdf": "/static/media/Akshay-Puranik-Resume.a91838dba9f2c77341c7.pdf",
@@ -29,11 +26,11 @@
     "static/media/npm.svg": "/static/media/npm.a688a2e91d237dedb1b0f67062dc2d7d.svg",
     "index.html": "/index.html",
     "main.30b4e909.css.map": "/static/css/main.30b4e909.css.map",
-    "main.4ac8c622.js.map": "/static/js/main.4ac8c622.js.map",
+    "main.70600762.js.map": "/static/js/main.70600762.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30b4e909.css",
-    "static/js/main.4ac8c622.js"
+    "static/js/main.70600762.js"
   ]
 }
