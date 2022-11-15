@@ -1,88 +1,104 @@
-import { AbsoluteCenter, Box, Center, Flex, Image, Text, VStack } from '@chakra-ui/react';
-import expressJs from "../Assets/Tech_Stack/express.svg"
-import bootStrap from "../Assets/Tech_Stack/bootstrap.svg"
-import css from "../Assets/Tech_Stack/css-3.svg"
-import javaScript from "../Assets/Tech_Stack/javascript.svg"
-import html5 from "../Assets/Tech_Stack/html-5.svg"
-import gitHub from "../Assets/Tech_Stack/github-icon.svg"
-import git from "../Assets/Tech_Stack/git-icon.svg"
+import {
+  AbsoluteCenter,
+  Box,
+  Center,
+  Flex,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
+import expressJs from "../Assets/Tech_Stack/express.svg";
+import bootStrap from "../Assets/Tech_Stack/bootstrap.svg";
+import css from "../Assets/Tech_Stack/css-3.svg";
+import javaScript from "../Assets/Tech_Stack/javascript.svg";
+import html5 from "../Assets/Tech_Stack/html-5.svg";
+import gitHub from "../Assets/Tech_Stack/github-icon.svg";
+import git from "../Assets/Tech_Stack/git-icon.svg";
 // import mongoDb from "../Assets/Tech_Stack/mongodb.svg"
-import nodeJs from "../Assets/Tech_Stack/nodejs-icon.svg"
-import npm from "../Assets/Tech_Stack/npm.svg"
-import reactLogo from "../Assets/Tech_Stack/react.svg"
-import reduxLogo from "../Assets/Tech_Stack/redux.svg"
-import React from 'react';
-import Slider from 'infinite-react-carousel';
+import nodeJs from "../Assets/Tech_Stack/nodejs-icon.svg";
+import npm from "../Assets/Tech_Stack/npm.svg";
+import reactLogo from "../Assets/Tech_Stack/react.svg";
+import reduxLogo from "../Assets/Tech_Stack/redux.svg";
+import React from "react";
+import Slider from "infinite-react-carousel";
 
 import onResize from "infinite-react-carousel";
-
 
 const TechStack = () => {
   const techStack = [
     {
       name: "Express JS",
-      image: expressJs
+      image: expressJs,
     },
     {
       name: "HTML 5",
-      image: html5
+      image: html5,
     },
     {
       name: "REDUX",
-      image: reduxLogo
+      image: reduxLogo,
     },
     {
       name: "React",
-      image: reactLogo
+      image: reactLogo,
     },
     {
       name: "CSS",
-      image: css
+      image: css,
     },
     {
       name: "Bootstrap",
-      image: bootStrap
+      image: bootStrap,
     },
     {
       name: "Node JS",
-      image: nodeJs
+      image: nodeJs,
     },
     {
       name: "Javascript",
-      image: javaScript
+      image: javaScript,
     },
     {
       name: "Git",
-      image: git
+      image: git,
     },
     {
       name: "Github",
-      image: gitHub
+      image: gitHub,
     },
     {
       name: "NPM",
-      image: npm
+      image: npm,
     },
-
-  ]
-
+  ];
 
   return (
-    <Box p={"1% 10%"} pb={"5%"} >
-      <Center p={"30px"} pt={"0"} >
-        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"4xl"}>Tools & Skills</Text>
+    <Box id="skills" p={"1% 10%"} pb={"5%"}>
+      <Center p={"30px"} pt={"0"}>
+        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"4xl"}>
+          Tools & Skills
+        </Text>
       </Center>
       <Box>
-        <Slider autoplaySpeed={"1500"} gap={"30px"} arrows={false} pauseOnHover={false} slidesToShow={"4"} wheel={true} autoplay={true} adaptiveHeight={true} >
-          {
-            techStack.map((el) => {
-              return <Box key={el.name} >
+        <Slider
+          autoplaySpeed={"1500"}
+          gap={"30px"}
+          arrows={false}
+          pauseOnHover={false}
+          slidesToShow={"4"}
+          wheel={true}
+          autoplay={true}
+          adaptiveHeight={true}
+        >
+          {techStack.map((el) => {
+            return (
+              <Box key={el.name}>
                 <Center>
                   <Image p={"20px"} h={"150px"} src={el.image} />
                 </Center>
               </Box>
-            })
-          }
+            );
+          })}
         </Slider>
       </Box>
       {/* <Box p={"30px"} border={"1px solid black"} >

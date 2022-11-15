@@ -5,7 +5,11 @@ import profileImg from "../Assets/profile_img.jpeg"
 const About = () => {
   return (
     <>
-      <Center>
+      {/* <Flex>
+        <Box w="35%" h="600px" bg ></Box>
+        <Box w="75%" h="600px" bg ></Box>
+      </Flex> */}
+      <Center id="about">
         <Flex w={"100%"} flexDirection={{ base: "column", md: "row" }}
           textAlign={{ base: "center" }}
           p={"50px"}
