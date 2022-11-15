@@ -55,7 +55,7 @@ export default function App() {
             <Avatar
               size="sm"
               name="Akshay Puranik"
-              src="https://img.freepik.com/premium-vector/hexagonal-letter-s-logo-icon_9880-1.jpg"
+              src="https://static.vecteezy.com/system/resources/previews/004/701/531/original/ap-letter-logo-modern-concept-isolated-on-white-background-vector.jpg"
               _hover={{ transform: "rotate(90deg)" }}
             />
           </chakra.a>
