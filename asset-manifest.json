@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.30b4e909.css",
-    "main.js": "/static/js/main.4fba67d1.js",
+    "main.js": "/static/js/main.d23e17a8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/landing.png": "/static/media/landing.485e6cb4283b34634f7e.png",
     "static/media/ideakart1.png": "/static/media/ideakart1.213cefdb5d3361e611d0.png",
     "static/media/milaap2.png": "/static/media/milaap2.f5936bafdf2f369a1911.png",
     "static/media/ideakart2.png": "/static/media/ideakart2.f4a2dafba36ef2379412.png",
     "static/media/milaap1.png": "/static/media/milaap1.9cd136b09fcd0bbbd3cc.png",
+    "static/media/clo2.png": "/static/media/clo2.34ebff05afbbe9c8ca74.png",
+    "static/media/signin.png": "/static/media/signin.adcd2678ca2360fec0a0.png",
     "static/media/ideakart3.png": "/static/media/ideakart3.cca172d1271e55b6a104.png",
+    "static/media/clo1.png": "/static/media/clo1.bc334325ef0f89237a71.png",
     "static/media/milaap3.png": "/static/media/milaap3.06dc14ccf6bbed19239b.png",
+    "static/media/foot.png": "/static/media/foot.980e7d8bb89fe93eb6d8.png",
     "static/media/profile_img.jpeg": "/static/media/profile_img.42402b912b564c387548.jpeg",
     "static/media/Akshay-Puranik-Resume.pdf": "/static/media/Akshay-Puranik-Resume.a91838dba9f2c77341c7.pdf",
+    "static/media/clo3.png": "/static/media/clo3.e0a60a77dd9e0480373b.png",
     "static/media/world-wide-web.png": "/static/media/world-wide-web.10a2be69190b69626a3e.png",
     "static/media/correct.png": "/static/media/correct.a8d20cd48e2e0d022083.png",
     "static/media/express.svg": "/static/media/express.778883a8c616cdae1ae2eded6c460ee0.svg",
@@ -26,11 +32,11 @@
     "static/media/npm.svg": "/static/media/npm.a688a2e91d237dedb1b0f67062dc2d7d.svg",
     "index.html": "/index.html",
     "main.30b4e909.css.map": "/static/css/main.30b4e909.css.map",
-    "main.4fba67d1.js.map": "/static/js/main.4fba67d1.js.map",
+    "main.d23e17a8.js.map": "/static/js/main.d23e17a8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30b4e909.css",
-    "static/js/main.4fba67d1.js"
+    "static/js/main.d23e17a8.js"
   ]
 }
