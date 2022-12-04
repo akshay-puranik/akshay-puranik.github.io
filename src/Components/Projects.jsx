@@ -2,6 +2,7 @@ import {
   Box,
   Center,
   Flex,
+  Heading,
   Image,
   List,
   ListIcon,
@@ -18,9 +19,13 @@ import m3 from "../Assets/projects/milaap/milaap3.png";
 import ik1 from "../Assets/projects/ideakart/ideakart1.png";
 import ik2 from "../Assets/projects/ideakart/ideakart2.png";
 import ik3 from "../Assets/projects/ideakart/ideakart3.png";
-// import bnb1 from "../Assets/projects/bnbclone/landing.jpg";
-// import bnb2 from "../Assets/projects/bnbclone/foot.png";
-// import bnb3 from "../Assets/projects/bnbclone/signin.png";
+import bnb1 from "../Assets/projects/bnbclone/landing.png";
+import bnb2 from "../Assets/projects/bnbclone/signin.png";
+import bnb3 from "../Assets/projects/bnbclone/foot.png";
+import cw1 from "../Assets/projects/clockify/clo1.png";
+import cw2 from "../Assets/projects/clockify/clo2.png";
+import cw3 from "../Assets/projects/clockify/clo3.png";
+// import image from "../Assets/projects/newbnb/foot.png"
 import checkMark from "../Assets/correct.png";
 import TechStack from "./TechStack";
 import css from "../Assets/Tech_Stack/css-3.svg";
@@ -32,16 +37,24 @@ import deployed from "../Assets/world-wide-web.png";
 const Projects = () => {
   const milaap = [m1, m2, m3];
   const ideakart = [ik1, ik2, ik3];
-  const clockify = [];
+  const bnbw = [bnb1, bnb2, bnb3];
+  const clockify = [cw1, cw2, cw3];
   // const bnbw = [bnb1, bnb2, bnb3];
 
   return (
-    <Box p={"20px 20%"}>
+    <Box id="projects" p={"20px 20%"}>
       <Center p={"30px"} pt={"0"}>
         <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"4xl"}>
           Projects
         </Text>
       </Center>
+      <VStack w="100%">
+        <Heading size="xl">Ideakart Clone</Heading>
+        <Text textAlign="center" pb="50px">
+          Ideakart is a site that gives yoy an idea and a platform for the book
+          you want. They offer a huge collection of books in diverse categories.
+        </Text>
+      </VStack>
       <Box display={"flex"} flexDirection={{ base: "column", md: "row" }}>
         <Box w={{ base: "100%", md: "40%" }} mb="40px">
           <Center fontSize="xl">IdeaKart Clone</Center>
@@ -122,6 +135,13 @@ const Projects = () => {
           </Slider>
         </Box>
       </Box>
+      <VStack w="100%">
+        <Heading size="xl">Milaap Clone</Heading>
+        <Text textAlign="center" pb="50px">
+          Millap is a free Crowdfunding for India Raise funds online for medical
+          emergencies and social causes
+        </Text>
+      </VStack>
       <Box display={"flex"} flexDirection={{ base: "column", md: "row" }}>
         <Box w={{ base: "100%", md: "40%" }} mb="40px">
           <Center fontSize="xl">Milaap Clone</Center>
@@ -209,6 +229,13 @@ const Projects = () => {
           </Slider>
         </Box>
       </Box>
+      <VStack w="100%">
+        <Heading size="xl">Clockify Clone</Heading>
+        <Text textAlign="center" pb="50px">
+          Clockify is a time tracker and timesheet app that lets you track work
+          hours across projects. Unlimited users, free forever.
+        </Text>
+      </VStack>
       <Box display={"flex"} flexDirection={{ base: "column", md: "row" }}>
         <Box w={{ base: "100%", md: "40%" }} mb="40px">
           <Center fontSize="xl">Clockify Clone</Center>
@@ -284,7 +311,7 @@ const Projects = () => {
         </Box>
         <Box w={{ base: "100%", md: "60%" }}>
           <Slider arrows={true} slidesToShow={"1"} autoplay={false}>
-            {ideakart.map((el) => {
+            {clockify.map((el) => {
               return (
                 <Box key={el}>
                   <Center>
@@ -296,6 +323,15 @@ const Projects = () => {
           </Slider>
         </Box>
       </Box>
+      <VStack w="100%">
+        <Heading size="xl">Bath & Body Works Clone</Heading>
+        <Text textAlign="center" pb="50px">
+          Bath and Body Works is your go-to place for gifts & goodies that
+          surprise & delight. From fresh fragrances to soothing skin care, we
+          make finding your perfect something special a happy-memory-making
+          experience.
+        </Text>
+      </VStack>
       <Box display={"flex"} flexDirection={{ base: "column", md: "row" }}>
         <Box w={{ base: "100%", md: "40%" }} mb="40px">
           <Center fontSize="xl">Bath & Body Works Clone</Center>
@@ -371,7 +407,7 @@ const Projects = () => {
         </Box>
         <Box w={{ base: "100%", md: "60%" }}>
           <Slider arrows={true} slidesToShow={"1"} autoplay={false}>
-            {ideakart.map((el) => {
+            {bnbw.map((el) => {
               return (
                 <Box key={el}>
                   <Center>
