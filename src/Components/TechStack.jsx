@@ -3,7 +3,9 @@ import {
   Box,
   Center,
   Flex,
+  Grid,
   Image,
+  Spacer,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -16,47 +18,44 @@ import gitHub from "../Assets/Tech_Stack/github-icon.svg";
 import git from "../Assets/Tech_Stack/git-icon.svg";
 // import mongoDb from "../Assets/Tech_Stack/mongodb.svg"
 import nodeJs from "../Assets/Tech_Stack/nodejs-icon.svg";
-import npm from "../Assets/Tech_Stack/npm.svg";
 import reactLogo from "../Assets/Tech_Stack/react.svg";
 import reduxLogo from "../Assets/Tech_Stack/redux.svg";
 import React from "react";
-import Slider from "infinite-react-carousel";
 
-import onResize from "infinite-react-carousel";
 
 const TechStack = () => {
   const techStack = [
     {
-      name: "Express JS",
+      name: "Express",
       image: expressJs,
     },
     {
-      name: "HTML 5",
+      name: "Node.js",
+      image: nodeJs,
+    },
+    {
+      name: "HTML",
       image: html5,
-    },
-    {
-      name: "REDUX",
-      image: reduxLogo,
-    },
-    {
-      name: "React",
-      image: reactLogo,
     },
     {
       name: "CSS",
       image: css,
     },
     {
-      name: "Bootstrap",
-      image: bootStrap,
-    },
-    {
-      name: "Node JS",
-      image: nodeJs,
-    },
-    {
       name: "Javascript",
       image: javaScript,
+    },
+    {
+      name: "React",
+      image: reactLogo,
+    },
+    {
+      name: "Redux",
+      image: reduxLogo,
+    },
+    {
+      name: "Bootstrap",
+      image: bootStrap,
     },
     {
       name: "Git",
@@ -66,67 +65,26 @@ const TechStack = () => {
       name: "Github",
       image: gitHub,
     },
-    {
-      name: "NPM",
-      image: npm,
-    },
+
   ];
 
   return (
-    <Box id="skills" p={"1% 10%"} pb={"5%"}>
-      <Center p={"30px"} pt={"0"}>
-        <Text fontWeight={"bold"} fontFamily={"sans-serif"} fontSize={"4xl"}>
-          Tools & Skills
-        </Text>
-      </Center>
-      <Box>
-        <Slider
-          autoplaySpeed={"1500"}
-          gap={"30px"}
-          arrows={false}
-          pauseOnHover={false}
-          slidesToShow={"4"}
-          wheel={true}
-          autoplay={true}
-          adaptiveHeight={true}
-        >
-          {techStack.map((el) => {
-            return (
-              <Box key={el.name}>
-                <Center>
-                  <Image p={"20px"} h={"150px"} src={el.image} />
-                </Center>
-              </Box>
-            );
-          })}
-        </Slider>
-      </Box>
-      {/* <Box p={"30px"} border={"1px solid black"} >
-        <Flex flexDirection={{ base: "column", md: "row" }}  >
-          <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
-            <Center>
-              <Text>
-                Front End
-              </Text>
-            </Center>
-          </Box>
-          <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
-            <Center>
-              <Text>
-                Back End
-              </Text>
-            </Center>
-          </Box>
-          <Box p={"10px"} border={"1px solid black"} h={"100px"} w={"100%"} >
-            <Center>
-              <Text>
-                DSA
-              </Text>
-            </Center>
-          </Box>
-        </Flex>
-      </Box> */}
-    </Box>
+    <VStack p={{ base: "50px 30px", md: "80px 100px" }} gap="40px" bg="#f6f6f6">
+      <Text grid fontWeight={"bold"} fontSize={"4xl"}>
+        Tools & Skills
+      </Text>
+      <Grid gap="30px" templateColumns={{ base: "repeat(3,1fr)",md:"repeat(5,1fr)" }}>
+        {techStack.map((el, i) => {
+          return (
+            <VStack p="20px">
+              <Image h="100%" maxW={i == 0 ? "60%" : "80px"} src={el.image} />
+              <Spacer />
+              <Text fontSize="lg">{el.name}</Text>
+            </VStack>
+          );
+        })}
+      </Grid>
+    </VStack>
   );
 };
 
