@@ -16,7 +16,7 @@ function App() {
       <Nabvar />
       <About />
       <TechStack />
-      {/* <Projects /> */}
+      <Projects />
       <Statistics/>
       <Contact/>
 
