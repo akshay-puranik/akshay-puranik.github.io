@@ -54,12 +54,12 @@ const Projects = () => {
 
   return (
     <>
-      <VStack p="60px 0" gap="40px">
+      <VStack id="projects" p="60px 0" gap="40px">
         <Text fontWeight={"bold"} fontSize={"4xl"}>
           Some Things I've Built
         </Text>
         <Grid
-          p={{base:"20px",md:"60px"}}
+          p={{ base: "20px", md: "60px" }}
           pt="0"
           gap="40px"
           templateColumns={{ base: "repeat(1,1fr)", md: "repeat(3,1fr)" }}

@@ -7,10 +7,10 @@ const About = () => {
     <>
       <Center
         bgGradient="radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);"
-        id="about"
         p="60px 0"
       >
         <Flex
+          id="home"
           w={"80%"}
           flexDirection={{ base: "column", md: "row" }}
           textAlign={{ base: "center" }}
@@ -29,8 +29,13 @@ const About = () => {
           </Center>
         </Flex>
       </Center>
-      <Center>
-        <VStack gap="40px" w={"100%"} p={{ base: "50px 30px", md: "80px 100px" }}>
+
+      <Center id="about">
+        <VStack
+          gap="40px"
+          w={"100%"}
+          p={{ base: "50px 30px", md: "80px 100px" }}
+        >
           <Text fontWeight={"bold"} fontSize={"4xl"}>
             About Me
           </Text>

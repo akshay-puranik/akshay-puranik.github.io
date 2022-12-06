@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Statistics = () => {
   return (
-    <VStack pb="100px" bg="#f6f6f6" m="auto" id="projects" gap={"40px"}>
+    <VStack id="activity" pb="100px" bg="#f6f6f6" m="auto" gap={"40px"}>
       <Text p="60px" pb="0" fontWeight={"bold"} fontSize={"4xl"}>
         Activity
       </Text>

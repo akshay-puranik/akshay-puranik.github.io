@@ -22,6 +22,7 @@ const navItem = [
   { path: "about", name: "About" },
   { path: "skills", name: "Skills" },
   { path: "projects", name: "Projects" },
+  { path: "activity", name: "Activity" },
   { path: "contact", name: "Contact" },
 ];
 
@@ -66,7 +67,7 @@ export default function App() {
                   key={item.path}
                   activeClass={"active"}
                   to={item.path}
-                  offset={item.path === "skills" ? -180 : -60}
+                  offset={item.path === "projects" ? -70 :item.path=="contact"? -70 :item.path=="activity"? -70 : item.path=="home"? -200 : -90}
                   spy={true}
                   smooth={true}
                   duration={700}
