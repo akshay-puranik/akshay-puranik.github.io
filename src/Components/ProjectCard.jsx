@@ -1,4 +1,3 @@
-import { ArrowUpIcon } from "@chakra-ui/icons";
 import {
   Heading,
   HStack,
@@ -11,7 +10,7 @@ import {
 import React from "react";
 
 const ProjectCard = (props) => {
-  const { title, desc, tech, gitLogo, liveLogo, gitLink, liveLink, image } =
+  const { title, desc, tech, gitLogo, gitLink, liveLink, image } =
     props;
 
   return (

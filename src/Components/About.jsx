@@ -1,4 +1,4 @@
-import { Avatar, Box, Center, Flex, Image, Spacer, Text, VStack } from '@chakra-ui/react';
+import { Avatar, Center, Flex, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import profileImg from "../Assets/profile_img.jpeg"
 
