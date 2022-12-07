@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
     props;
 
   return (
-    <VStack minW="280px" gap="10px" bg="#f6f6f6" boxShadow="xl" p="20px">
+    <VStack minW="280px" gap="10px" bg="#f6f6f6" borderRadius="20px" boxShadow="md" p="20px">
       <Image borderRadius="10px" src={image} />
       <Heading p="10px" size="md">
         {title}

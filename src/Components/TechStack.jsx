@@ -3,6 +3,7 @@ import {
   Image,
   Spacer,
   Text,
+  Tooltip,
   VStack,
 } from "@chakra-ui/react";
 import expressJs from "../Assets/Tech_Stack/express.svg";
@@ -75,10 +76,10 @@ const TechStack = () => {
       >
         {techStack.map((el, i) => {
           return (
-            <VStack p="20px">
-              <Image h="100%" maxW={i == 0 ? "60%" : "80px"} src={el.image} />
-              <Spacer />
-              <Text fontSize="lg">{el.name}</Text>
+            <VStack p="20px" key={el.name}>
+              <Tooltip label={el.name} placement="bottom">
+              <Image h="100%" maxW={i == 0 ? "60%" : "60px"} src={el.image} />
+              </Tooltip>
             </VStack>
           );
         })}

@@ -55,14 +55,18 @@ const Projects = () => {
   return (
     <>
       <VStack id="projects" p="60px 0" gap="40px">
-        <Text fontWeight={"bold"} fontSize={"4xl"}>
+        <Text fontWeight={"bold"} fontSize={{base:"2xl",md:"4xl"}}>
           Some Things I've Built
         </Text>
         <Grid
           p={{ base: "20px", md: "60px" }}
           pt="0"
           gap="40px"
-          templateColumns={{ base: "repeat(1,1fr)", md: "repeat(3,1fr)" }}
+          templateColumns={{
+            base: "repeat(1,1fr)",
+            md: "repeat(2,1fr)",
+            lg: "repeat(3,1fr)",
+          }}
         >
           {sampleProject.map((el) => (
             <ProjectCard {...el} />
