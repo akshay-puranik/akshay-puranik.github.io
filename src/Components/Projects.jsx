@@ -25,9 +25,9 @@ const Projects = () => {
       desc: "The Cool Club is a website based on Bath & Body Works which is an ecommerce website that specializes in body care products",
       tech: ["React", "Redux", "node.js", "Mongo DB", "Express"],
       gitLogo: gitHub,
-      gitLink: "http://github.com/akshay-puranik/unkempt-meal-6720",
+      gitLink: "https://github.com/Avdhoot-Kurhe/The-Cool-Club",
       liveLogo: deployed,
-      liveLink: "https://candid-ganache-399b55.netlify.app/",
+      liveLink: "https://bnbtempdep-akshay-puranik.vercel.app/",
       image: bnb1,
     },
     {
