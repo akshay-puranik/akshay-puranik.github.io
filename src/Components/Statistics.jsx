@@ -1,9 +1,18 @@
 import { Center, Flex, Text,  VStack } from "@chakra-ui/react";
 import React from "react";
+import { useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Link } from "react-scroll";
+import { getLeetCodeStats } from "../Utils/stats";
 
 const Statistics = () => {
+
+  useEffect(() => {
+    getLeetCodeStats()
+  },[])
+
+
+
   return (
     <VStack id="activity" pb="100px" bg="#f6f6f6" m="auto" gap={"40px"}>
       <Text p="60px" pb="0" fontWeight={"bold"} fontSize={"4xl"}>
@@ -12,7 +21,7 @@ const Statistics = () => {
       <GitHubCalendar username="akshay-puranik" />
       <Flex direction={{ md: "row", base: "column" }}>
         <Center>
-          <Link>
+          <Link to="">
             <img
               style={{height:"200px"}}
               alt="Github Stats"
@@ -21,7 +30,7 @@ const Statistics = () => {
           </Link>
         </Center>
         <Center>
-          <Link>
+          <Link to="">
             <img
               style={{height:"200px"}}
               alt="Akshay's Top Languages"

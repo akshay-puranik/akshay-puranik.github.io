@@ -43,7 +43,7 @@ const About = () => {
             Web developer with the ability to learn and collaborate. Worked with
             a rapidly growing startup and developed an interest in web
             development. Been through a 1000+ hours of bootcamp, learning
-            JavaScript, React Js, Node Js, etc. Eager to kickstart a carreer in
+            javascript, React, Node, Express. Eager to kickstart a carreer in
             this field and looking forward to the learning/challenges yet to
             come.
           </Text>

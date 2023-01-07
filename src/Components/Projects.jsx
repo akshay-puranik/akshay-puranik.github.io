@@ -69,7 +69,7 @@ const Projects = () => {
           }}
         >
           {sampleProject.map((el) => (
-            <ProjectCard {...el} />
+            <ProjectCard key={el.title} {...el} />
           ))}
         </Grid>
       </VStack>

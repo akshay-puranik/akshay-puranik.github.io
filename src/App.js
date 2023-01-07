@@ -7,10 +7,6 @@ import Statistics from './Components/Statistics';
 import TechStack from './Components/TechStack';
 
 function App() {
-
-
-
-
   return (
     <>
       <Nabvar />
@@ -19,8 +15,6 @@ function App() {
       <Projects />
       <Statistics/>
       <Contact/>
-
-      
     </>
   );
 }

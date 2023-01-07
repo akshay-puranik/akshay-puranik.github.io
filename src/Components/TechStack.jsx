@@ -67,7 +67,7 @@ const TechStack = () => {
 
   return (
     <VStack p={{ base: "50px 30px", md: "80px 100px" }} gap="40px" bg="#f6f6f6">
-      <Text id="skills" grid fontWeight={"bold"} fontSize={"4xl"}>
+      <Text id="skills" fontWeight={"bold"} fontSize={"4xl"}>
         Tools & Skills
       </Text>
       <Grid
@@ -78,7 +78,7 @@ const TechStack = () => {
           return (
             <VStack p="20px" key={el.name}>
               <Tooltip label={el.name} placement="bottom">
-              <Image h="100%" maxW={i == 0 ? "60%" : "60px"} src={el.image} />
+                <Image h="100%" maxW={i == 0 ? "60%" : "60px"} src={el.image} />
               </Tooltip>
             </VStack>
           );
